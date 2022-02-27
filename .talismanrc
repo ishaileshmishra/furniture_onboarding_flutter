@@ -1,0 +1,52 @@
+threshold: medium
+fileignoreconfig:
+  - filename: .dccache
+    checksum: 7e35add206087c1f3fe299d9cb1f8ab0997a252b8eda6fcfabdc576a1b421856
+  - filename: .metadata
+    checksum: b03233edebcbf75b188a916f27a7332937911cafc4c6fda8554433537cda7bc7
+  - filename: ios/Flutter/AppFrameworkInfo.plist
+    checksum: df572895833e2bb516c7e9a992ac0c26d2b3a1c1af9af13745420a9ed1c11db3
+  - filename: ios/Runner.xcodeproj/project.pbxproj
+    checksum: 89d6f50a5bea75c4b9cd0ad09266cc328bdd9386fb64c93f93dd35d11ef4c514
+  - filename: ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+    checksum: 891e0955785d7c794dc35f94649e5cee7d2dad6e2506db4081a858f50cd793c7
+  - filename: ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+    checksum: dfed3029d1da6278d8c1d9d1b4c66716b05f42eb2e6c581b69e9e8e86c301b64
+  - filename: ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme
+    checksum: ee7cdf724ce8e76b0b28f812c062afbdc464a9d5032556b710d6453ec79f3b8e
+  - filename: ios/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+    checksum: e9662a27453bd6754e1def1cfb4d368c73dda5e71522dd74b4b0b6d6e6b1866c
+  - filename: ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+    checksum: 7548a7b4f16473684319a716085df37d446b0af5bd895704a7f45b8a97d65a64
+  - filename: ios/Runner/Base.lproj/LaunchScreen.storyboard
+    checksum: f49bc04fa78a08519364188d72f38c20839c02cc648a98e2b4c472e778e514d5
+  - filename: ios/Runner/Base.lproj/Main.storyboard
+    checksum: 67e11ece28335f11c5bc6f9fd29f89a593db242fc8eda1d17808bf67e993fe4f
+  - filename: ios/Runner/Info.plist
+    checksum: 3414463745a5696806c73086a3528e447da44c5895142988f2cfd88ecc1428c9
+  - filename: lib/main.dart
+    checksum: 380af40509773aafee9f70f9cdfd8b5034f4deb854c4b0a27db4f897e06d4306
+  - filename: lib/view/home_page.dart
+    checksum: 3039fa5c5dbb058d2cf3dca0e428ca2a833c53b009de631cd6f5a27259dcb02c
+  - filename: lib/view/page_item.dart
+    checksum: a2a848f665b12c1e4a5cf95fe31f90bc745dec42748528c5df5da36994705d26
+  - filename: macos/Runner.xcodeproj/project.pbxproj
+    checksum: 0294e92f4af3b191ac3ea445d2f5d9c5078a0216fc4d34fd007fa3fcdc2fb422
+  - filename: macos/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+    checksum: 4425f9f113268775a7d5bd9d685929b91a059c97f08f8f46ab054a01358f9108
+  - filename: macos/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme
+    checksum: 37b2a3a558ab501ce0f05899e6481f39ab5e2ee66d6c6f1c08c06b7c7825355f
+  - filename: macos/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+    checksum: 5f76c201fe320fc40d9deb00dd9218c8f8fb6919bd62ce75282165b5f49d72ee
+  - filename: macos/Runner/Base.lproj/MainMenu.xib
+    checksum: ce97a8c93df7777bc0a317f04ac39b64fe747986c8313635a161a6b9157558d1
+  - filename: macos/Runner/DebugProfile.entitlements
+    checksum: 93edade8d28fef5232a8b5398fa4b8fc3d880f54df893c8414354a4e68c96267
+  - filename: macos/Runner/Info.plist
+    checksum: 486e6317fd1a9a0922bf9fa7e2d94704d5f0c0976743acd8eb9f5338843e59c3
+  - filename: macos/Runner/Release.entitlements
+    checksum: 0b88736110bc2ebcbd934b02452616b0c05af5c9cf52301626b2ee6126da1cd7
+  - filename: windows/runner/utils.h
+    checksum: f647858a48d3e0eb9bbbf6a4b6598a61ffba6a7ba365d36dba8525198693a40f
+  - filename: README.md
+    checksum: f3b9e0c70513c1a47425a169719b9379bc0a8b0e53764e273c3e7feebd834392
