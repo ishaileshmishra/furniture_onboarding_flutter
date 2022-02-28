@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pageview_flutter/model/model.dart';
+import 'package:furniture/model/model.dart';
 
 const _image1 = 'assets/images/image1.png';
 const _image2 = 'assets/images/image2.png';

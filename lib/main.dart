@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:pageview_flutter/constatnt.dart';
-import 'package:pageview_flutter/model/model.dart';
-import 'package:pageview_flutter/view/page_item.dart';
+import 'package:furniture/constatnt.dart';
+import 'package:furniture/model/model.dart';
+import 'package:furniture/view/page_item.dart';
 
 void main() async {
   runApp(const MyApp());

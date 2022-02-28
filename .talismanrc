@@ -50,3 +50,9 @@ fileignoreconfig:
     checksum: f647858a48d3e0eb9bbbf6a4b6598a61ffba6a7ba365d36dba8525198693a40f
   - filename: README.md
     checksum: f3b9e0c70513c1a47425a169719b9379bc0a8b0e53764e273c3e7feebd834392
+  - filename: ios/Podfile.lock
+    checksum: 6fdf49ed91a7603b469a30d07e6486061b1440e3f0127f10a3b2680203753506
+  - filename: ios/Runner.xcodeproj/project.pbxproj
+    checksum: b80ccce1892aaeb026bd015c2555f2919fb6e98456c324b064d5f6f732d14f9e
+  - filename: .dccache
+    checksum: fb7ce6fa461e4b783b74f3ac6c2ab84ac772569061ffc02083eed404c0d34861

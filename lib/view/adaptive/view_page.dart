@@ -1,12 +1,18 @@
+import 'package:delayed_display/delayed_display.dart';
 import 'package:flutter/material.dart';
-
 import '../../model/model.dart';
 import 'adaptive_column.dart';
 
-class AdaptiveLayout extends StatelessWidget {
+class AdaptiveLayout extends StatefulWidget {
   const AdaptiveLayout({Key? key, required this.item}) : super(key: key);
-
   final PageModel item;
+
+  @override
+  State<AdaptiveLayout> createState() => _AdaptiveLayoutState();
+}
+
+class _AdaptiveLayoutState extends State<AdaptiveLayout> {
+  late AnimationController rotationController;
 
   @override
   Widget build(BuildContext context) {
@@ -23,13 +29,15 @@ class AdaptiveLayout extends StatelessWidget {
           children: [
             Padding(
               padding: const EdgeInsets.all(18.0),
-              child: Image.asset(
-                item.image,
-                height: height / 2,
-                width: width,
+              child: DelayedDisplay(
+                child: Image.asset(
+                  widget.item.image,
+                  height: height / 2,
+                  width: width,
+                ),
               ),
             ),
-            AdaptiveCoulum(item: item)
+            AdaptiveCoulum(item: widget.item)
           ],
         );
       }
@@ -37,14 +45,16 @@ class AdaptiveLayout extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Image.asset(
-            item.image,
-            height: height,
-            width: width / 2,
+          DelayedDisplay(
+            child: Image.asset(
+              widget.item.image,
+              height: height,
+              width: width / 2,
+            ),
           ),
           SizedBox(
-            height: height / 2,
-            child: AdaptiveCoulum(item: item),
+            height: height,
+            child: AdaptiveCoulum(item: widget.item),
           )
         ],
       );
