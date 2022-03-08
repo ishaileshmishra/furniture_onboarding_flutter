@@ -3,9 +3,14 @@ import 'package:furniture/model/model.dart';
 import 'package:furniture/view/adaptive/view_page.dart';
 
 class PageItem extends StatelessWidget {
-  const PageItem({Key? key, required this.item}) : super(key: key);
+  const PageItem({
+    Key? key,
+    required this.index,
+    required this.item,
+  }) : super(key: key);
 
   final PageModel item;
+  final int index;
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +22,7 @@ class PageItem extends StatelessWidget {
         ),
         Padding(
           padding: const EdgeInsets.all(40.0),
-          child: AdaptiveLayout(item: item),
+          child: AdaptiveLayout(index: index, item: item),
         ),
       ],
     );

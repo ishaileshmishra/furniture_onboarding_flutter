@@ -52,7 +52,8 @@ class _MyHomePageState extends State<MyHomePage> {
       return PageView.builder(
         itemCount: items.length,
         itemBuilder: (builder, index) {
-          return PageItem(item: items[index]);
+          int _index = index + 1;
+          return PageItem(index: _index, item: items[index]);
         },
       );
     }));

@@ -4,8 +4,13 @@ import '../../model/model.dart';
 import 'adaptive_column.dart';
 
 class AdaptiveLayout extends StatefulWidget {
-  const AdaptiveLayout({Key? key, required this.item}) : super(key: key);
+  const AdaptiveLayout({
+    Key? key,
+    required this.index,
+    required this.item,
+  }) : super(key: key);
   final PageModel item;
+  final int index;
 
   @override
   State<AdaptiveLayout> createState() => _AdaptiveLayoutState();
@@ -20,24 +25,26 @@ class _AdaptiveLayoutState extends State<AdaptiveLayout> {
     double width = MediaQuery.of(context).size.width;
     double height = MediaQuery.of(context).size.height;
 
-    return LayoutBuilder(
-        builder: (BuildContext context, BoxConstraints constraints) {
+    return LayoutBuilder(builder: (
+      BuildContext context,
+      BoxConstraints constraints,
+    ) {
       if (orientation == Orientation.portrait) {
         return Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Padding(
-              padding: const EdgeInsets.all(18.0),
+              padding: const EdgeInsets.all(8.0),
               child: DelayedDisplay(
                 child: Image.asset(
                   widget.item.image,
                   height: height / 2,
-                  width: width,
+                  fit: BoxFit.cover,
                 ),
               ),
             ),
-            AdaptiveCoulum(item: widget.item)
+            AdaptiveCoulum(index: widget.index, item: widget.item)
           ],
         );
       }
@@ -54,7 +61,7 @@ class _AdaptiveLayoutState extends State<AdaptiveLayout> {
           ),
           SizedBox(
             height: height,
-            child: AdaptiveCoulum(item: widget.item),
+            child: AdaptiveCoulum(index: widget.index, item: widget.item),
           )
         ],
       );
